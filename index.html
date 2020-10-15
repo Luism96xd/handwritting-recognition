@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritting Recognition with Tensorflow.js</title>
+    <!-- Import TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <!-- Import tfjs-vis -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+    <!-- Import the data file -->
+    <script src="data.js" type="module"></script>
+    <!-- Import the main script file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id= title>Handwritting Recognition</h1>
+    <div class="container" id="container">
+        <div id="canvas-container"></div>
+        <div id="prediction"></div>
+        <div id="controls">
+            <button id="predict">Predict</button>
+            <button id="clear">Clear</button>
+        </div>
+        <div class="status">
+            <p id="status">Status</p>
+        </div>
+    <script src="paint.js" type="module"></script>
+    <!--script src="script.js" type="module"></script-->
+</body>
+</html>
